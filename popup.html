@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>M3U8 Extractor</title>
+    <link rel="stylesheet" type="text/css" href="popup.css">
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>M3U8 Links</h1>
+
+        <div id="statusMessage"></div>
+
+        <div id="downloadProgress" class="progress-container" style="display: none;">
+            <div class="progress-label">Downloading: <span id="progressPercent">0%</span></div>
+            <div class="progress-bar">
+                <div id="progressBar" class="progress"></div>
+            </div>
+            <div class="download-controls">
+                <button id="pauseDownload" class="control-btn">Pause</button>
+                <button id="cancelDownload" class="control-btn cancel">Cancel</button>
+            </div>
+        </div>
+
+        <div id="videoContainer" style="display: none;">
+            <video id="video" controls></video>
+        </div>
+
+        <div id="urlList"></div>
+
+        <div class="button-container">
+            <button id="clearButton">Clear List</button>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

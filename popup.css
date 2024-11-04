@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10px;
+    width: 400px;
+    background-color: #f0f0f0;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 0;
+}
+
+#statusMessage {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+#videoContainer {
+    margin: 10px 0;
+    width: 100%;
+}
+
+video {
+    width: 100%;
+    border-radius: 4px;
+}
+
+#urlList {
+    margin-top: 15px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.url-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.url-text {
+    word-break: break-all;
+    margin-right: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+/* Tambahkan di popup.css */
+.progress-container {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+}
+
+.progress-label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    width: 0%;
+    height: 100%;
+    background-color: #4CAF50;
+    transition: width 0.3s ease-in-out;
+}
+
+.download-controls {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.control-btn {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    background-color: #2196F3;
+    color: white;
+}
+
+.control-btn.cancel {
+    background-color: #f44336;
+}
+
+.control-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+#clearButton {
+    background-color: #f44336;
+    color: white;
+}
+
+.play-btn, .download-btn, .copy-btn {
+    padding: 5px 10px;
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+.play-btn {
+    background-color: #2196F3;
+    color: white;
+}
+
+.download-btn {
+    background-color: #FF9800;
+    color: white;
+}
+
+.copy-btn {
+    background-color: #9E9E9E;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
