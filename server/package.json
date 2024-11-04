@@ -1,0 +1,15 @@
+{
+    "name": "m3u8-downloader-server",
+    "version": "1.0.0",
+    "description": "Server for M3U8 Downloader Extension",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "express": "^4.17.1",
+        "cors": "^2.8.5",
+        "axios": "^0.21.1",
+        "fluent-ffmpeg": "^2.1.2"
+    }
+}
